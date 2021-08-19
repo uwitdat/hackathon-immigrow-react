@@ -1,0 +1,12 @@
+.Profile-page {
+  height: 100vh;
+}
+
+.Profile-container {
+  height: 90vh;
+}
+
+.Profile-container > p {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
