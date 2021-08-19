@@ -8,7 +8,7 @@ const SignupPage = () => {
     return (
         <div className='Signup-container'>
             <div className='immigrow-logo'>
-                <p>LOGO</p>
+                <img style={{ height: '8rem' }} alt='logo' src='imigrow.png'></img>
             </div>
             <h1 className='Signup-title'>IMMIGROW</h1>
             <p className='can'>Canada</p>

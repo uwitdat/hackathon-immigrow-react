@@ -30,7 +30,7 @@ const LandingPage = () => {
         <div className='logo-title'>
 
           <div className="Login-logo">
-            <p>Logo</p>
+            <img style={{ height: '6rem' }} alt='logo' src='imigrow.png'></img>
           </div>
           <div className='LandingPage-title-container'>
             <h1 className='LandingPage-h1'>IMMIGROW</h1>
@@ -72,7 +72,7 @@ const LandingPage = () => {
             />
             <div className='terms-agree'>
               <input type='checkbox' id="box" />
-              <p>I agree to the terms of service & security policy</p>
+              <p>I agree to the <span id='link'>terms of service</span> & <span id='link'>security policy</span></p>
             </div>
 
             <button type="submit" className="Login-btn">

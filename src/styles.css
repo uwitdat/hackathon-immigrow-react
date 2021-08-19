@@ -18,3 +18,7 @@
 .back-btn:hover {
   cursor: pointer;
 }
+
+.margin-btn {
+  margin-bottom: 0.5rem;
+}
