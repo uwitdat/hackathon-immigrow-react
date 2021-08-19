@@ -24,44 +24,66 @@ const LandingPage = () => {
 
   return (
     <div className="LandingPage-container">
-      <div className="Welcome-container">
-        <h1>Welcome to Immigrow!</h1>
-        <p className="Login-signup">Sign Up</p>
-      </div>
 
       <div className="Login-container">
-        <div className="Login-logo">
-          <p>Logo</p>
+
+        <div className='logo-title'>
+
+          <div className="Login-logo">
+            <p>Logo</p>
+          </div>
+          <div className='LandingPage-title-container'>
+            <h1 className='LandingPage-h1'>IMMIGROW</h1>
+          </div>
         </div>
-        <form onSubmit={handleSubmitUser}>
-          <input
-            className="Login-input"
-            type="text"
-            placeholder="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required={true}
-          />
-          <input
-            className="Login-input"
-            type="email"
-            placeholder="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required={true}
-          />
-          <input
-            className="Login-input"
-            type="password"
-            placeholder="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required={true}
-          />
-          <button type="submit" className="Login-btn">
-            Submit
-          </button>
-        </form>
+
+        <div className='form-container'>
+          <form onSubmit={handleSubmitUser}>
+            <input
+              className="Login-input"
+              type="text"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required={true}
+            />
+            <input
+              className="Login-input"
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required={true}
+            />
+            <input
+              className="Login-input"
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required={true}
+            />
+            <input
+              className="Login-input"
+              type="password"
+              placeholder="Re-Enter Password"
+
+              required={true}
+            />
+            <div className='terms-agree'>
+              <input type='checkbox' id="box" />
+              <p>I agree to the terms of service & security policy</p>
+            </div>
+
+            <button type="submit" className="Login-btn">
+              Sign Up
+            </button>
+          </form>
+        </div>
+        <div className='policy'>
+          <p>Terms of service | Privacy policy | Security</p>
+
+        </div>
       </div>
     </div>
   );
