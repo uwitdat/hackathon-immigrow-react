@@ -1,0 +1,10 @@
+.Form-txt {
+  resize: none;
+  width: 88vw;
+  height: 30vh;
+  border-radius: 10px;
+  border-color: rgba(97, 97, 97, 0.274);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
