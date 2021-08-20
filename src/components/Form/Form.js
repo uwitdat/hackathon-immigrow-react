@@ -34,12 +34,12 @@ handleSubmit = async () => {
   render() {
     return(
       <div>
-        <textarea 
+        <textarea className="formcontent" 
           name="content"
           onChange={this.handleChange}
           value={this.state.content}></textarea>
         <br/>
-        <button onClick={this.handleSubmit}>Submit!</button>
+        <button className="submitbtn" onClick={this.handleSubmit}>Submit!</button>
       </div>
     )
   }

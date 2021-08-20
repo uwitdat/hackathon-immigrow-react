@@ -1,3 +1,13 @@
+.LandingPage-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .Signup-container {
     height: 100vh;
     display: flex;
@@ -5,6 +15,15 @@
     flex-direction: column;
   }
   
+  button {
+    border: 1px solid transparent;
+    background-color: rgb(77, 214, 123);
+    border-radius: 5px;
+    width: 24vw;
+    padding: 0.7rem 0;
+    font-size: 1.1rem;
+  }
+
   .immigrow-logo {
     background-color: rgb(184, 184, 184);
     border-radius: 50%;
@@ -80,3 +99,32 @@
     font-size: 1.1rem;
   }
   
+  .register {
+    background-color: transparent;
+    margin-top: 0.5rem;
+    padding: 0.7rem 0;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  .signin {
+    background-color: transparent;
+    margin-top: 0.5rem;
+    padding: 0.7rem 0;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ 

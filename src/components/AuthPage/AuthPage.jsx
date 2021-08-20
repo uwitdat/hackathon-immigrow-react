@@ -14,14 +14,16 @@ export default class AuthPage extends React.Component {
       <div className='LandingPage-container'>
           <div className='immigrow-logo'>
           <img style={{ height: '8rem' }} alt='logo' src='imigrow.png'></img>
+          </div>
+          <div>
                     <h1 className="text" onClick={() => this.setState(
                         { showLogin: !this.state.showLogin }
                     )}>
                         {this.state.showLogin
                             ?
-                            <>Don't have an account? <button>Register</button></>
+                            <>Don't have an account? <button className="register">Register</button></>
                             :
-                            <>Have an account? <button>Sign In</button></>
+                            <>Have an account? <button className="signin">Sign In</button></>
                         }</h1>
                 </div>
 
