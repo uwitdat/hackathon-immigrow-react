@@ -3,6 +3,7 @@ import "./UserDetails.css";
 import { useContext, useState } from "react";
 import { UserContext } from "../UserContext/UserContext";
 import { useHistory } from "react-router-dom";
+import DetailsHeader from "../DetailsHeader/DetailsHeader";
 
 const UserDetailsPage = () => {
   const { user, setUser } = useContext(UserContext);
@@ -29,10 +30,7 @@ const UserDetailsPage = () => {
 
   return (
     <div className="UserDetails-container">
-      <div className='UserDetails-header'>
-        <img style={{ height: '3rem' }} alt='logo' src='imigrow.png'></img>
-        <h1 className="UserDetails-title">IMMIGROW</h1>
-      </div>
+      <DetailsHeader />
 
       <div className='img-upload'>
         <div className='img-contain'>
