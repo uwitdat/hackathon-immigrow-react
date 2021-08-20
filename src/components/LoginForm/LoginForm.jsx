@@ -36,7 +36,7 @@ export default class LoginForm extends Component {
       
           } catch (err) {
               console.log("signup error", err)
-              this.setState({error: 'oops, login failed. try again'});
+              this.setState({error: 'Login failed! Try again.'});
           }      
     }
 
