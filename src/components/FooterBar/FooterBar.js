@@ -5,16 +5,21 @@ import { HiUserGroup } from "react-icons/hi";
 import { MdEventNote } from "react-icons/md";
 import { IoPerson } from "react-icons/io5";
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { UserContext } from "../UserContext/UserContext";
+
 
 
 const FooterBar = () => {
+    const { active, handleColor } = useContext(UserContext);
+
 
 
     return (
         <div className='footerbar'>
-            <div className='flex-col'>
-                <Link to='/homepage'>
-                    <AiFillHome value='click' className='footer-icon black' />
+            <div className={active === '/homepage' ? 'flex-col active' : 'flex-col'}>
+                <Link onClick={() => handleColor('/homepage')} to='/homepage'>
+                    <AiFillHome className='footer-icon black' />
                 </Link>
                 <p className='footer-text black'>HOME</p>
             </div>
@@ -26,8 +31,8 @@ const FooterBar = () => {
                 <MdEventNote className='footer-icon black' />
                 <p className='footer-text black' >EVENTS</p>
             </div>
-            <div className='flex-col'>
-                <Link to='/mentors'>
+            <div className={active === '/mentors' ? 'flex-col active' : 'flex-col'}>
+                <Link onClick={() => handleColor('/mentors')} to='/mentors'>
                     <IoPerson className='footer-icon black' />
                 </Link>
                 <p className='footer-text'>MENTORS</p>

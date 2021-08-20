@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import Mentor from "../Mentor/Mentor";
-import { Link } from "react-router-dom";
-import { IoChevronBackOutline } from "react-icons/io5";
 import axios from "axios";
 import FooterBar from "../FooterBar/FooterBar";
 import DetailsHeader from "../DetailsHeader/DetailsHeader";
@@ -23,11 +21,7 @@ const MentorsPage = () => {
       {mentors.map((mentor) => (
         <Mentor key={mentor._id} mentor={mentor} />
       ))}
-      <div className="btn-container">
-        <Link to="/homepage">
-          <IoChevronBackOutline className="back-btn" />
-        </Link>
-      </div>
+
       <FooterBar />
     </div>
   );

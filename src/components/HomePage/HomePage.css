@@ -38,3 +38,17 @@
   font-size: 1.2rem;
   display: block;
 }
+
+.gray {
+  background-color: rgb(214, 214, 214);
+}
+
+.Home-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Home-img > h2 {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}

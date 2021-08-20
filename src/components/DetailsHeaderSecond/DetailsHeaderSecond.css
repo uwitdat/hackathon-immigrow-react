@@ -1,0 +1,19 @@
+.UserDetails-header2nd {
+  display: flex;
+  width: 98vw;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  justify-content: space-between;
+}
+
+.bell {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
