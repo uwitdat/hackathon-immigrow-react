@@ -1,0 +1,24 @@
+.Google-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.combobox {
+  color: black;
+  width: 86vw;
+  margin-top: 1rem;
+  border-color: #4e4e4e31;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border-style: solid;
+  font-size: 15px;
+}
+
+.green {
+  background-color: rgb(77, 214, 123);
+  border: 2px solid transparent;
+  margin-top: 4.5rem;
+  width: 92vw;
+}

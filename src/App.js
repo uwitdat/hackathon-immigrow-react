@@ -5,6 +5,7 @@ import UserDetailsPage from "./components/UserDetailsPage/UserDetailsPage";
 import HomePage from "./components/HomePage/HomePage";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import MentorsPage from "./components/MentorsPage/MentorsPage";
+import CommunityEvents from './components/CommunityEvents/CommunityEvents'
 
 import { UserContext } from "./components/UserContext/UserContext";
 import { useState } from "react";
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="/homepage" component={HomePage} />
           <Route path="/profile/:id" component={ProfilePage} />
           <Route path="/mentors" component={MentorsPage} />
+          <Route path="/events" component={CommunityEvents} />
         </UserContext.Provider>
       </Router>
     </div>

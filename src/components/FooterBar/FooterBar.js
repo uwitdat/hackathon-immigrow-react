@@ -27,9 +27,11 @@ const FooterBar = () => {
                 <HiUserGroup className='footer-icon black' />
                 <p className='footer-text black'>GROUPS</p>
             </div>
-            <div className='flex-col'>
-                <MdEventNote className='footer-icon black' />
-                <p className='footer-text black' >EVENTS</p>
+            <div className={active === '/events' ? 'flex-col active' : 'flex-col'}>
+                <Link onClick={() => handleColor('/events')} to='/events'>
+                    <MdEventNote className='footer-icon black' />
+                    <p className='footer-text black' >EVENTS</p>
+                </Link>
             </div>
             <div className={active === '/mentors' ? 'flex-col active' : 'flex-col'}>
                 <Link onClick={() => handleColor('/mentors')} to='/mentors'>

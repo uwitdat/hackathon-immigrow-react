@@ -23,14 +23,14 @@ const HomePage = () => {
           btntxt='View' />
         <h2>Community Groups</h2>
         <HomePageContent
-          imgone={'img5.jpg'} dateone='Aug 29, 7:00PM'
-          imgtwo={'img6.jpg'} datetwo='Sep 3, 1:00PM'
+          imgone={'img8.jpg'} dateone='Aug 29, 7:00PM'
+          imgtwo={'img9.jpg'} datetwo='Sep 3, 1:00PM'
           imgthree={'img7.jpg'} datethree='Sep 5, 11:00AM'
           btntxt='Join' />
         <h2>Mentors</h2>
         <HomePageContent
-          imgone={'img8.jpg'} dateone='Sep 5 7:00PM'
-          imgtwo={'img9.jpg'} datetwo='Sep 10, 11:30AM'
+          imgone={'img5.jpg'} dateone='Sep 5 7:00PM'
+          imgtwo={'img6.jpg'} datetwo='Sep 10, 11:30AM'
           imgthree={'img7.jpg'} datethree='Sep 5, 11:00AM'
           btntxt='Connect' />
       </div>
