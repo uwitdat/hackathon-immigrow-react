@@ -3,9 +3,11 @@ const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
 require('./config/database');
+const cors = require('cors')
 
 const express = require('express')
 const app = express()
+app.use(cors())
 const mongoose = require('mongoose')
 
 app.use(express.static('public'))
@@ -19,8 +21,8 @@ app.get('/groups/:room', (req, res) => {
 })
 
 mongoose.connect(process.env.DATABASE_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 })
 
 const db = mongoose.connection
@@ -62,7 +64,7 @@ app.use('/api/events', require('./routes/api/events'))
 
 const port = process.env.PORT || 3001;
 
-app.listen(port, function() {
+app.listen(port, function () {
   console.log(`Express app running on port ${port}`)
 });
 
@@ -72,6 +74,6 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests
-app.get('/*', function(req, res) {
+app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const eventSchema = new mongoose.Schema({
+const mentorEventSchema = new mongoose.Schema({
     eventName: {
         type: String,
         required: true
@@ -11,7 +11,7 @@ const eventSchema = new mongoose.Schema({
     },
     link: {
         type: String,
-        default: {mentorId}
+        default: 'http://zoom-meeting/452dfdwer.com'
     },
     mentorId: {
         type: mongoose.Schema.Types.ObjectId, ref: 'Mentor'
@@ -19,4 +19,4 @@ const eventSchema = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('Event', eventSchema)
+module.exports = mongoose.model('MentorEvent', mentorEventSchema)

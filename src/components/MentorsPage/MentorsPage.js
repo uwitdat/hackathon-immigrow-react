@@ -7,6 +7,8 @@ import DetailsHeader from "../DetailsHeader/DetailsHeader";
 const MentorsPage = () => {
   const [mentors, setMentors] = useState([]);
 
+  console.log(mentors)
+
   const getMentors = async () => {
     const res = await axios.get("http://localhost:3001/mentors");
     setMentors(res.data);

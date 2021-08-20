@@ -1,0 +1,19 @@
+POST http://localhost:3001/mentors
+Content-Type: application/json
+
+{
+    "name": "Janice Teller",
+    "avatar": "https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F609946db7c398a0de6c94893%2FMid-Adult-Female-Entrepreneur-With-Arms-Crossed-%2F960x0.jpg%3Ffit%3Dscale",
+    "creds": "English Tutor, Tech Guru",
+    "events": [
+        {
+            "eventName": "Learning English Basics",
+            "dateTime": "Aug 25 2021 8:30PM" 
+        },
+        {
+            "eventName": "Finding The Right Schools",
+            "dateTime": "Aug 29 2021 11:30AM" 
+        }
+
+    ]
+}

@@ -2,7 +2,7 @@ import { ImRadioUnchecked, ImRadioChecked } from "react-icons/im";
 import { useState } from "react";
 import "./MentorEvent.css";
 
-const MentorEvent = ({ mentorevent }) => {
+const MentorEvent = ({ event }) => {
   const [attending, setAttending] = useState(false);
 
   const handleAttend = () => {
@@ -10,17 +10,17 @@ const MentorEvent = ({ mentorevent }) => {
   };
   return (
     <div className="event-container">
-      <h4>{mentorevent.mentoreventName}</h4>
-      <p className="event-date">{mentorevent.dateTime}</p>
+      <h4>{event.eventName}</h4>
+      <p className="event-date">{event.dateTime}</p>
 
       {attending ? (
         <div className="attend-container">
           <p className="attend-txt">
-            Attending: <span className="check">{mentorevent.name}</span>{" "}
+            Attending: <span className="check">{event.name}</span>{" "}
             <span>&#10004;</span>
           </p>
           <p>
-            Event link: <span className="event-link">{mentorevent.link}</span>
+            Event link: <span className="event-link">{event.link}</span>
           </p>
           <ImRadioChecked className="btn-attend" onClick={handleAttend} />
         </div>

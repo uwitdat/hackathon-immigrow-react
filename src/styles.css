@@ -26,3 +26,6 @@ body {
 .margin-btn {
   margin-bottom: 0.5rem;
 }
+.goog-te-banner-frame {
+  visibility: hidden !important;
+}

@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const Mentor = require('../models/mentor')
-const Event = require('../models/event')
+const Event = require('../models/mentorevent')
 
 //GET ALL
 router.get('/', async (req, res) => {
