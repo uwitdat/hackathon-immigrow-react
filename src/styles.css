@@ -29,3 +29,7 @@ body {
 .goog-te-banner-frame {
   visibility: hidden !important;
 }
+
+.register {
+  padding: 0.2 1rem;
+}
