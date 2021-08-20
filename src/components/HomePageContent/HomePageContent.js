@@ -1,6 +1,7 @@
 import React from 'react'
 import './HomePageContent.css'
 
+
 const HomePageContent = ({ dateone, imgone, datetwo, imgtwo, imgthree, datethree, btntxt }) => {
     return (
 
@@ -36,7 +37,6 @@ const HomePageContent = ({ dateone, imgone, datetwo, imgtwo, imgthree, datethree
                     <button className='content-btn'>{btntxt}</button>
                 </div>
             </div>
-
 
         </div>
 

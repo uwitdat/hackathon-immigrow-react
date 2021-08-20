@@ -18,14 +18,11 @@ const SignupPage = () => {
             </div>
             <p className='lan-select'>Select your language</p>
             <div className='Signup-lan-container'>
-                <p>English</p><AiOutlineDown className='arr-down' />
+            <div id="google_translate_element"></div>
             </div>
             <Link to='/signup'>
-                <button className='Signup-btn'>Sign up</button>
+                <button className='Signup-btn'>Get Started</button>
             </Link>
-            <div className='text-container'>
-                <p>Already have an account? <span className='signup'>Sign Up</span></p>
-            </div>
 
         </div>
     )
