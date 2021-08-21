@@ -25,14 +25,16 @@ const UserDetailsPage = () => {
 
   const handleSetBio = (e) => {
     setBio(e.target.value)
-    setChar(char + 1)
+    // setChar(char + 1)
   }
 
   const handleKeyDown = (e) => {
-    if (e.keyCode === 46) {
-      console.log('true');
+    if (e.keyCode !== 8) {
+      setChar(char + 1)
+    } else if (e.keyCode === 8 && char === 0) {
+      setChar(0)
     } else {
-      console.log('false')
+      setChar(char - 1)
     }
   }
 
@@ -49,7 +51,7 @@ const UserDetailsPage = () => {
       <div className='text-info-User'>
         <p className='Details-txt'>Hi,</p>
         <p className='Details-txt margin-btn'>{user.name}!</p>
-        <p className='margin-btn'>Welcome to Immigrow! Please fill out a short bio so we can better connect you with others in your community!</p>
+        <p className='margin-btn'>Welcome to Immigrow! Please fill out a short bio so we can better connect you with others in your community.</p>
         <p className='Details-txt margin-btn'>Bio</p>
       </div>
       <div className="UserDetails-form-container">

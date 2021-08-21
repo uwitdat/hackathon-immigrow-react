@@ -74,8 +74,8 @@ textarea::-webkit-input-placeholder {
 }
 
 .UserDetails-avatar {
-  color: rgb(43, 43, 43);
-  font-size: 5rem;
+  color: rgba(43, 43, 43, 0.082);
+  font-size: 7rem;
 }
 
 .Login-btn {
