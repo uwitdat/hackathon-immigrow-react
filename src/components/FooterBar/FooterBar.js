@@ -28,14 +28,14 @@ const FooterBar = () => {
             <div className={active === '/groups' ? 'flex-col active' : 'flex-col'}>
                 <Link onClick={() => handleColor('/groups')} to='/groups'>
                     <HiUserGroup className='footer-icon black' />
-                    </Link> 
-                    <p className='footer-text black'>GROUPS</p>
+                </Link>
+                <p className='footer-text black'>GROUPS</p>
             </div>
             <div className={active === '/events' ? 'flex-col active' : 'flex-col'}>
                 <Link onClick={() => handleColor('/events')} to='/events'>
                     <MdEventNote className='footer-icon black' />
-                    </Link> 
-                    <p className='footer-text black' >EVENTS</p>
+                </Link>
+                <p className='footer-text black' >EVENTS</p>
 
             </div>
             <div className={active === '/mentors' ? 'flex-col active' : 'flex-col'}>
@@ -44,7 +44,12 @@ const FooterBar = () => {
                 </Link>
                 <p className='footer-text'>MENTORS</p>
             </div>
-            <UserLogout />
+            <div className={active === '/' ? 'flex-col active' : 'flex-col'}>
+                <Link onClick={() => handleColor('/')} to='/'>
+                    <IoIosLogOut className='footer-icon black' />
+                </Link>
+                <p className='footer-text'>LOGOUT</p>
+            </div>
         </div>
     )
 }

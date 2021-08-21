@@ -67,9 +67,23 @@ textarea::-webkit-input-placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(77, 214, 123);
   border-radius: 50%;
   height: 9rem;
   width: 9rem;
   margin-bottom: 2rem;
+}
+
+.UserDetails-avatar {
+  color: rgb(43, 43, 43);
+  font-size: 5rem;
+}
+
+.Login-btn {
+  border: 1px solid transparent;
+  background-color: rgb(77, 214, 123);
+  border-radius: 5px;
+  width: 45vw;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+  margin-top: 1rem;
 }

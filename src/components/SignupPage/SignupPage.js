@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineDown } from "react-icons/ai";
+
 import { Link } from 'react-router-dom'
 import './SignupPage.css'
 
@@ -18,9 +18,9 @@ const SignupPage = () => {
             </div>
             <p className='lan-select'>Select your language</p>
             <div className='Signup-lan-container'>
-            <div id="google_translate_element"></div>
+                <div id="google_translate_element"></div>
             </div>
-            <Link to='/signup'>
+            <Link to='/details'>
                 <button className='Signup-btn'>Get Started</button>
             </Link>
 
