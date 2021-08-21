@@ -14,7 +14,7 @@ const HomePage = () => {
 
 
       <div className='Home-img'>
-        <img style={{ height: '13rem', width: '100vw', objectFit: 'cover' }} src='img1.jpg' alt='users'></img>
+
         <h2>Upcoming Events</h2>
         <HomePageContent
           imgone={'img2.jpg'} dateone='Aug 9, 7:00PM'
