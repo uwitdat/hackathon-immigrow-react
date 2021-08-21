@@ -26,15 +26,15 @@ const FooterBar = () => {
                 <p className='footer-text black'>HOME</p>
             </div>
             <div className={active === '/groups' ? 'flex-col active' : 'flex-col'}>
-                <Link onClick={() => handleColor('/groups')} to='/groups'>
-                    <HiUserGroup className='footer-icon black' />
-                </Link>
+
+                <HiUserGroup className='footer-icon black' />
+
                 <p className='footer-text black'>GROUPS</p>
             </div>
             <div className={active === '/events' ? 'flex-col active' : 'flex-col'}>
-                <Link onClick={() => handleColor('/events')} to='/events'>
-                    <MdEventNote className='footer-icon black' />
-                </Link>
+
+                <MdEventNote className='footer-icon black' />
+
                 <p className='footer-text black' >EVENTS</p>
 
             </div>

@@ -1,10 +1,13 @@
-import React from 'react'
+import { useHistory } from 'react-router-dom'
 import './HomePageContent.css'
 
+const HomePageContent = ({ dateone, imgone, datetwo, imgtwo, imgthree, datethree, btntxt, redirectLink }) => {
+    const history = useHistory()
 
-const HomePageContent = ({ dateone, imgone, datetwo, imgtwo, imgthree, datethree, btntxt }) => {
+    const handleRedirect = () => {
+        history.push(redirectLink)
+    }
     return (
-
         <div className='content'>
 
             <div className='col'>
@@ -14,7 +17,7 @@ const HomePageContent = ({ dateone, imgone, datetwo, imgtwo, imgthree, datethree
                     <p>Finding a sense of community <br />upon arrival</p>
                 </div>
                 <div className='content-two'>
-                    <button className='content-btn'>{btntxt}</button>
+                    <button onClick={handleRedirect} className='content-btn'>{btntxt}</button>
                 </div>
             </div>
             <div className='col'>
@@ -24,7 +27,7 @@ const HomePageContent = ({ dateone, imgone, datetwo, imgtwo, imgthree, datethree
                     <p>Finding a sense of community <br />upon arrival</p>
                 </div>
                 <div className='content-two'>
-                    <button className='content-btn'>{btntxt}</button>
+                    <button onClick={handleRedirect} className='content-btn'>{btntxt}</button>
                 </div>
             </div>
             <div className='col'>
@@ -34,7 +37,7 @@ const HomePageContent = ({ dateone, imgone, datetwo, imgtwo, imgthree, datethree
                     <p>Finding a sense of community <br />upon arrival</p>
                 </div>
                 <div className='content-two'>
-                    <button className='content-btn'>{btntxt}</button>
+                    <button onClick={handleRedirect} className='content-btn'>{btntxt}</button>
                 </div>
             </div>
 

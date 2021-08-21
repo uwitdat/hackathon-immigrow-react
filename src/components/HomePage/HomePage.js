@@ -29,7 +29,7 @@ const HomePage = () => {
           imgone={'img5.jpg'} dateone='Sep 5 7:00PM'
           imgtwo={'img6.jpg'} datetwo='Sep 10, 11:30AM'
           imgthree={'img7.jpg'} datethree='Sep 5, 11:00AM'
-          btntxt='Connect' />
+          btntxt='Connect' redirectLink='/mentors' />
       </div>
 
 
