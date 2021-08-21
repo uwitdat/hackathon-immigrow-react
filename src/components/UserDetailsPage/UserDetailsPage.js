@@ -51,7 +51,7 @@ const UserDetailsPage = () => {
       <div className='text-info-User'>
         <p className='Details-txt'>Hi,</p>
         <p className='Details-txt margin-btn'>{user.name}!</p>
-        <p className='margin-btn'>Welcome to Immigrow! Please fill out a short bio so we can better connect you with others in your community.</p>
+        <p className='margin-btn bio-txt'>Welcome to Immigrow! Please fill out a short bio so we can better connect you with others in your community.</p>
         <p className='Details-txt margin-btn'>Bio</p>
       </div>
       <div className="UserDetails-form-container">
@@ -69,7 +69,7 @@ const UserDetailsPage = () => {
             <p>{char}/200 characters</p>
 
           </div>
-          <button type="submit" className="Login-btn">
+          <button type="submit" className="Login-btn long">
             Submit
           </button>
         </form>

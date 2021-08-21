@@ -1,12 +1,9 @@
-
 import HomePageContent from '../HomePageContent/HomePageContent'
 import FooterBar from '../FooterBar/FooterBar'
 import DetailsHeaderSecond from "../DetailsHeaderSecond/DetailsHeaderSecond";
 import "./HomePage.css";
 
 const HomePage = () => {
-
-
   return (
 
     <div className='Content-container'>

@@ -1,3 +1,7 @@
+.Content-container {
+  padding-bottom: 80px;
+}
+
 .Home-container {
   height: 100vh;
   display: flex;

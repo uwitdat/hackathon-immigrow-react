@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
 import './SignupPage.css'
 
@@ -20,8 +19,8 @@ const SignupPage = () => {
             <div className='Signup-lan-container'>
                 <div id="google_translate_element"></div>
             </div>
-            <Link to='/details'>
-                <button className='Signup-btn'>Get Started</button>
+            <Link to='/signup'>
+                <button className='Login-btn'>Get Started</button>
             </Link>
 
         </div>
